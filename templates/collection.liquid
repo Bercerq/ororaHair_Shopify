@@ -1,0 +1,15 @@
+{% section 'collection-template' %}
+{% section 'recently-viewed-products' %}
+{% section 'collection-footer' %}{% assign con_tent ='' %}
+{% if collection.metafields.collectionlower.show_content == 'all_pages' %}
+	{% assign con_tent =  collection.metafields.collectionlower.lowerdata %}
+{% else %}
+	{% if current_page == 1 %}
+		{% assign con_tent =  collection.metafields.collectionlower.lowerdata %}
+	{% endif %}
+{% endif %}
+<div class='col_lower_main' style='width:100%'>
+	<div class='inner_lower_main' style='max-width:1170px;margin:0 auto;'>
+		{{ con_tent }}
+	</div>
+</div>

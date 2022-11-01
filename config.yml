@@ -1,0 +1,9 @@
+development:
+  password: shptka_36ab68ade4511da41aad2d8d7fa58e46
+  theme_id: "132042981552"
+  store: orora-hair.myshopify.com
+  ignore_files:
+    - config/settings_data.json
+    - /\.(txt|gif|bat)$/
+    - "*.liquid___jb_tmp___"
+    - "*.liquid___jb_old___"
